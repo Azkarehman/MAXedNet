@@ -8,4 +8,4 @@ Since at each level the features come at different resolutions they all need to 
 
 ![](https://github.com/Azkarehman/Thyroid-Nodule-Segmentation/blob/main/model_.png)
 
-[](https://github.com/Azkarehman/Thyroid-Nodule-Segmentation/blob/main/modules.png)
+![](https://github.com/Azkarehman/Thyroid-Nodule-Segmentation/blob/main/modules.png)
