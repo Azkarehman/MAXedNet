@@ -1,4 +1,4 @@
-# MAX*ed*-Net: Multiscale Mutually Distilled Self-Guided Attention Network for Thyroid Nodule Segmentation
+# Peer Learning & Dynamic Self-Distillation: A Key to Improved Thyroid Nodule Segmentation With Multiscale Self-Guided Attention Network
 
 ## Architecture
 
