@@ -1,10 +1,13 @@
-# Peer Learning & Dynamic Self-Distillation: A Key to Improved Thyroid Nodule Segmentation With Multiscale Self-Guided Attention Network
+# Intelligent Healthcare System for IoMT-Integrated Sonography: Leveraging Multi-Scale Self-Guided Attention Networks and Dynamic Feature Fusion
 
-## Architecture
+## Cloud-based thyroid nodule segmentation using IoMT-enabled sonography
 
-The nodules found in the thyroid are of various sizes, both small and large. A large number of traditional convolutional neural networks have a local receptive field, this is fine for specific small nodules but can cause intra-class inconsistency for larger nodules since the context information is not encoded properly. To deal with this problem we have first encoded features from multiple scales and then used the attention mechanisms to build a link between those features. The feature from multiple scales is concatenated together and then combined with the features from each scale. These combined features are then fed to guided attention modules which consist of the channel and spatial attention modules. Channel and spatial attention modules help to integrate local features with their global dependencies. The overall architecture of our model is depicted in Figures below whereas figure displays the details of attention module.
 
-Since at each level the features come at different resolutions they all need to be upsampled using bilinear interpolation to a common resolution before being concatenated together. These concatenated features are convolved to create a single multi-scale feature map.
+## Abstract
+
+Through the Internet of Medical Things (IoMT), early diagnosis of various critical diseases has been revolutionized, particularly via sonography in thyroid nodule identification. Despite its benefits, accurate thyroid nodule segmentation remains challenging due to the heterogeneity of nodules in terms of shape, size, and visual characteristics. This complexity underscores the necessity for improved Computer-Aided Diagnosis (CAD) methods that can provide robust assistance to radiologists. Subsequently, this study introduces a multiscale self-guided network leveraging a novel Dynamic Self-Distillation (DSD) training framework to significantly enhance thyroid nodule segmentation. The developed architecture captures rich contextual dependencies by capitalizing on  self-guided attention mechanisms, thus fusing the local features with corresponding global dependencies while adaptively highlighting interdependent channel maps. Irrelevant information from coarse multiscale features is filtered out using self-guided attention mechanisms, leading to the generation of refined feature maps. These maps, in turn, facilitate the creation of accurate thyroid tumor segmentation masks. The novel DSD mechanism, implemented to train the architecture, dynamically selects the teacher branch based on performance relative to the ground truth label, and computes distillation losses for each student branch. Evaluation on two publicly available datasets reveals the superior performance of our framework over its degraded versions and existing state-of-the-art techniques, demonstrating the promising potential of our proposed approach to be employed for thyroid nodule segmentation in IoMT.
+
+IOMT
 
 ![](https://github.com/Azkarehman/Thyroid-Nodule-Segmentation/blob/main/model_.png)
 
