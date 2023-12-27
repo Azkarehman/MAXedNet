@@ -19,7 +19,7 @@ from functools import reduce
 import torch
 import torch.nn as nn
 from torchvision.models import resnext50_32x4d, resnext101_32x8d
-
+##how to use : net = DAF_stack()
 class LambdaBase(nn.Sequential):
     def __init__(self, fn, *args):
         super(LambdaBase, self).__init__(*args)
@@ -637,3 +637,4 @@ class DAF_stack(nn.Module):
         else:
             return predict1_2, predict2_2, predict3_2, predict4_2
         
+#net = DAF_stack()
